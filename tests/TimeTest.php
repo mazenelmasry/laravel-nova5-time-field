@@ -1,14 +1,14 @@
 <?php
 
 
-namespace Michielfb\Time\Tests;
+namespace MazenElmasry\TimeField\Tests;
 
 
-use Michielfb\Time\Time;
+use MazenElmasry\TimeField\Time;
 use PHPUnit\Framework\TestCase;
 
 /**
- * @coversDefaultClass \Michielfb\Time\Time
+ * @coversDefaultClass \MazenElmasry\TimeField\Time
  */
 class TimeTest extends TestCase
 {

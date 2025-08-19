@@ -1,6 +1,6 @@
 <?php
 
-namespace Michielfb\Time;
+namespace MazenElmasry\TimeField;
 
 use Illuminate\Support\ServiceProvider;
 use Laravel\Nova\Events\ServingNova;
@@ -16,8 +16,8 @@ class FieldServiceProvider extends ServiceProvider
     public function boot()
     {
         Nova::serving(function (ServingNova $event) {
-            Nova::script('time', __DIR__.'/../dist/js/field.js');
-            Nova::style('time', __DIR__.'/../dist/css/field.css');
+            Nova::script('time', __DIR__ . '/../dist/js/field.js');
+            Nova::style('time', __DIR__ . '/../dist/css/field.css');
         });
     }
 

@@ -1,6 +1,6 @@
 <?php
 
-namespace Michielfb\Time;
+namespace MazenElmasry\TimeField;
 
 use DateTimeImmutable;
 use Laravel\Nova\Fields\Field;
@@ -76,7 +76,7 @@ class Time extends Field
         ]);
     }
 
-         */
+
     public function readonly($callback = true)
     {
         if (is_callable($callback)) {

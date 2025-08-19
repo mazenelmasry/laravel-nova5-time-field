@@ -10,7 +10,7 @@ This package require laravel/nova:~4.0.
 Use composer to install the package.
 
 ```shell
-composer require michielfb/laravel-nova-time-field
+composer require MazenElmasry/laravel-nova-time-field
 ```
 
 ## Usage
@@ -20,7 +20,7 @@ seconds. The time is show in the "h:i A" format (For example 11:15 PM). When no 
 entered the value "n/a" is shown.
 
 ```php
-use Michielfb\Time\Time;
+use MazenElmasry\TimeField\Time;
 
 Time::make('Time')
     ->withSeconds()
@@ -39,7 +39,7 @@ A default value can be passed to the `format` method. This determines the value 
 value entered.
 
 ```php
-use Michielfb\Time\Time;
+use MazenElmasry\TimeField\Time;
 
 Time::make('Time')
     ->format('h:i A', '-');
@@ -52,7 +52,7 @@ can be configured by using the `withSteps` method.
 
 ```php
 <?php 
-use Michielfb\Time\Time;
+use MazenElmasry\TimeField\Time;
 
 Time::make('Time')->withSteps(1);
 ```
@@ -61,7 +61,7 @@ The `withSeconds` method sets a step of 1 which allows users to enter seconds.
 
 ```php
 <?php 
-use Michielfb\Time\Time;
+use MazenElmasry\TimeField\Time;
 
 Time::make('Time')->withSeconds();
 ```
@@ -70,7 +70,7 @@ The `withMilliseconds` method sets a step of 0.001 which allows users to enter m
 
 ```php
 <?php 
-use Michielfb\Time\Time;
+use MazenElmasry\TimeField\Time;
 
 Time::make('Time')->withMilliseconds();
 ```
