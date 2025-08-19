@@ -1,32 +1,33 @@
 {
-    "name": "michielfb/laravel-nova-time-field",
-    "description": "A HTML5 time field for Laravel Nova.",
+    "name": "mazenelmasry/laravel-nova5-time-field",
+    "description": "Custom HTML5 time field for Laravel Nova 5.",
     "keywords": [
         "laravel",
-        "nova"
+        "nova",
+        "time"
     ],
     "license": "MIT",
     "require": {
-        "php": "^7.3|^8.0",
-        "laravel/nova": "^4.0|^5.0"
+        "php": "^8.0",
+        "laravel/nova": "^5.0"
     },
     "require-dev": {
         "phpunit/phpunit": "^9.5.10"
     },
     "autoload": {
         "psr-4": {
-            "Michielfb\\Time\\": "src/"
+            "MazenElmasry\\TimeField\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Michielfb\\Time\\Tests\\": "tests/"
+            "MazenElmasry\\TimeField\\Tests\\": "tests/"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "Michielfb\\Time\\FieldServiceProvider"
+                "MazenElmasry\\TimeField\\FieldServiceProvider"
             ]
         }
     },
