@@ -13,6 +13,8 @@
         :class="errorClasses"
         :placeholder="field.name"
         :step="field.step !== undefined ? field.step : false"
+        :readonly="field.readonly"
+        :disabled="field.readonly"
         v-model="value"
       />
     </template>
