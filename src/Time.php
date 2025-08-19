@@ -75,4 +75,14 @@ class Time extends Field
             'step' => 0.001,
         ]);
     }
+
+         */
+    public function readonly($callback = true)
+    {
+        if (is_callable($callback)) {
+            $callback = call_user_func($callback, app(\Laravel\Nova\Http\Requests\NovaRequest::class));
+        }
+
+        return $this->withMeta(['readonly' => $callback]);
+    }
 }
